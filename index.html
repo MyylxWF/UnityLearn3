@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ThreeXXL</title>
+    <title>Unity WebGL Player | TTCJump</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=720 height=1280></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ThreeXXL</div>
+        <div id="unity-build-title">TTCJump</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/ThreeXXL.loader.js";
+      var loaderUrl = buildUrl + "/TTCJump.loader.js";
       var config = {
-        dataUrl: buildUrl + "/ThreeXXL.data.unityweb",
-        frameworkUrl: buildUrl + "/ThreeXXL.framework.js.unityweb",
-        codeUrl: buildUrl + "/ThreeXXL.wasm.unityweb",
+        dataUrl: buildUrl + "/TTCJump.data.unityweb",
+        frameworkUrl: buildUrl + "/TTCJump.framework.js.unityweb",
+        codeUrl: buildUrl + "/TTCJump.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "ThreeXXL",
-        productVersion: "1.5.1",
+        companyName: "ttc",
+        productName: "TTCJump",
+        productVersion: "0.4",
         showBanner: unityShowBanner,
       };
 
@@ -91,12 +91,11 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
-        
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "720px";
-        canvas.style.height = "1280px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
